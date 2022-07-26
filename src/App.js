@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/Layout';
+import { Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import PageOne from './pages/PageOne';
+import PageTwo from './pages/PageTwo';
+import PageThree from './pages/PageThree';
+import PageCTA from './pages/PageCTA';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Layout>
+			<Switch>
+				<Route path="/" exact>
+					<Home />
+				</Route>
+				<Route path="/page-one">
+					<PageOne />
+				</Route>
+				<Route path="/page-two">
+					<PageTwo />
+				</Route>
+				<Route path="/page-three">
+					<PageThree />
+				</Route>
+				<Route path="/page-cta">
+					<PageCTA />
+				</Route>
+			</Switch>
+		</Layout>
+	);
 }
 
 export default App;

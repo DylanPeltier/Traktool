@@ -1,0 +1,17 @@
+@import './variables.scss';
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	font-family: 'Akira Expanded', sans-serif;
+	color: $dark;
+}
+
+#root {
+	height: 100%;
+}
