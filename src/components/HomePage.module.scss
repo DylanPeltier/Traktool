@@ -1,0 +1,36 @@
+@import './../styles/variables.scss';
+
+.middletext {
+    color: $light;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 4vh;
+
+	@include breakpoint(md) {
+		font-size: 6vh;
+	}
+
+	.toptext {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bottomtext {
+		padding: 0rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.h2green {
+		color: $trak-green;
+	}
+
+	.h1orange {
+		color: $trak-orange;
+	}
+}
