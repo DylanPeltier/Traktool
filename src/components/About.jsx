@@ -6,7 +6,7 @@ const About = () => {
 		<div className={classes.whole}>
 			<div className={classes.text}>
 				<div className={classes.title_text}>
-					<h1>about traktool</h1>
+					<h1>about us</h1>
 				</div>
 				<div className={classes.para}>
 					<p>

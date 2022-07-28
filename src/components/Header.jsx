@@ -60,8 +60,8 @@ const Header = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="/page-three" onClick={menuToggleHandler}>
-								PageThree
+							<Link to="/gallery" onClick={menuToggleHandler}>
+								Gallery
 							</Link>
 						</li>
 					</ul>

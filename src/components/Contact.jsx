@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import classes from './Contact.module.scss';
 import emailjs from '@emailjs/browser';
+import { FaPhoneSquare } from 'react-icons/fa';
 
 const Contact = () => {
 	const form = useRef();
@@ -29,7 +30,14 @@ const Contact = () => {
 		<div className={classes.masscon}>
 			<div className={classes.contact_container}>
 				<div className={classes.form_container}>
-					<h3>contact us</h3>
+					<h3>message</h3>
+					<div className={classes.form_container_phone}>
+						<i>
+							{' '}
+							<FaPhoneSquare />
+						</i>
+						<p>226-626-9567 </p>
+					</div>
 					<form
 						action=""
 						ref={form}
@@ -65,9 +73,9 @@ const Contact = () => {
 					<iframe
 						title="gmap"
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.7486855082607!2d-81.88100114839041!3d42.43308397907971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882fe8107c880d0b%3A0x3c8e961f42d329ed!2sTRAK%20Tool%20%26%20Machine%20Inc!5e0!3m2!1sen!2sca!4v1658986123456!5m2!1sen!2sca"
-						style={{ border: '0', width: '100%', height: '100%' }}
 						allowfullscreen=""
 						loading="lazy"
+                        style={{ width: '100%', height: '100%', border: 'none' }}
 						referrerpolicy="no-referrer-when-downgrade"
 					></iframe>
 				</div>

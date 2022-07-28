@@ -2,8 +2,8 @@ import Layout from './components/Layout';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import PageThree from './pages/PageThree';
 import About from './pages/About';
+import Gallery from './pages/Gallery';
 
 function App() {
 	return (
@@ -18,8 +18,8 @@ function App() {
 				<Route path="/contact-us">
 					<Contact />
 				</Route>
-				<Route path="/page-three">
-					<PageThree />
+				<Route path="/gallery">
+					<Gallery />
 				</Route>
 			</Switch>
 		</Layout>
