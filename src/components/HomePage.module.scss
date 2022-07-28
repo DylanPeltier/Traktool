@@ -1,11 +1,11 @@
 @import './../styles/variables.scss';
 
 .middletext {
-    color: $light;
+	color: $light;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	font-size: 4vh;
+	font-size: 2.5vh;
 
 	@include breakpoint(md) {
 		font-size: 6vh;
