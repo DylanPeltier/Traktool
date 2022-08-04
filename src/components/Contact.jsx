@@ -36,7 +36,7 @@ const Contact = () => {
 							{' '}
 							<FaPhoneSquare />
 						</i>
-						<p>226-626-9567 </p>
+						<p>+1 519 674 0709 </p>
 					</div>
 					<form
 						action=""

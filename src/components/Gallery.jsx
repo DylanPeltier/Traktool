@@ -1,18 +1,14 @@
 import classes from './Gallery.module.scss';
-
 import React from 'react';
+import Slider from './Slider/Slider';
 
 const Gallery = () => {
 	return (
-		<div className={classes.gallery_container}>
-			<div className={classes.gallery_container_title}>
-				<h1>some of our work</h1>
+		<div className={classes.container}>
+			<div className={classes.title}>
+				<h1>our work</h1>
 			</div>
-			<div className={classes.gallery_container_imgs_container}>
-				<div className="gallery_container_imgs_container_frame">
-					<img src="../imgs/storefront.jpg" alt="" />
-				</div>
-			</div>
+			<Slider />
 		</div>
 	);
 };

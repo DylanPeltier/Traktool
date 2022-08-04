@@ -31,4 +31,32 @@ $headerHeight: 100px;
 			@content;
 		}
 	}
+
+	@if $point == sm {
+		// 768px
+		@media (min-width: 40em) {
+			@content;
+		}
+	}
+
+	@if $point == lg {
+		// 768px
+		@media (min-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $point == xl {
+		// 768px
+		@media (min-width: 80em) {
+			@content;
+		}
+	}
+
+	@if $point == 2xl {
+		// 768px
+		@media (min-width: 96em) {
+			@content;
+		}
+	}
 }
