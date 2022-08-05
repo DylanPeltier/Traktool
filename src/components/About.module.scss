@@ -52,27 +52,9 @@
 
 			@include breakpoint(md) {
 				font-size: 2.5vh;
-				padding: 1rem 2rem;
+				padding: 1rem 5.5rem;
 				width: 100%;
 			}
 		}
-	}
-}
-
-div.image {
-	display: none;
-	width: 50%;
-	height: 147px;
-	background-image: url(./../imgs/teststore.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	@include breakpoint(md) {
-		display: block;
-		width: 480px;
-		height: 270px;
-		background-image: url(./../imgs/teststore.png);
-		margin: 2rem 10rem;
 	}
 }
