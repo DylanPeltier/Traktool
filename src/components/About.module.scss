@@ -1,4 +1,6 @@
 @import './../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,900&display=swap');
+
 
 .whole {
 	display: flex;
@@ -18,26 +20,39 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('..//imgs/storefront.jpg'),;
+		// background: rgba($color: #000000, $alpha: 0.8);
+		background-position: center;
+		background-size: cover;
+		width: 75vw;
+		height: 42vh;
+		border-radius: 15px;
+
+		@include breakpoint(md) {
+			width: 70vw;
+			height: 70vh;
+		}
 
 		.title_text {
-			padding: 0rem 5rem;
+			padding: 1rem 1rem;
 			font-size: 1.8vh;
 
 			@include breakpoint(md) {
-				font-size: 2.5vh;
-				padding: 0rem 10rem;
+				font-size: 2.7vh;
+				padding: 1rem 2rem;
 			}
 		}
 
 		.para {
-			padding: 1rem 5rem;
-			font-size: 1.5vh;
+			padding: 0.5rem 3rem;
+			font-size: 1.8vh;
 			width: 120%;
-			padding-bottom: 3rem;
+			padding-bottom: 1rem;
+			font-family: 'kanit', sans-serif;
 
 			@include breakpoint(md) {
-				font-size: 2vh;
-				padding: 1rem 10rem;
+				font-size: 2.5vh;
+				padding: 1rem 2rem;
 				width: 100%;
 			}
 		}

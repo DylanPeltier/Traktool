@@ -1,15 +1,16 @@
 .container-slider {
-	width: 900px;
-	height: 571px;
+	width: 90vw;
+	height: 25vh;
 	margin: 1rem 1rem;
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1023px) {
 	.container-slider {
 		margin: 0;
-		width: 100%;
+		width: 60vw;
+    height: 60vh;
 	}
 }
 

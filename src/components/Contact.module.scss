@@ -43,10 +43,11 @@
 }
 
 .form_container p {
-	display: none;
-	font-size: 0.5rem;
+	display: block;
+	font-size: 0.8rem;
 	font-weight: 400;
 	margin-bottom: 1rem;
+	font-family: 'kanit', sans-serif;
 	text-align: center;
 
 	@include breakpoint(md) {
@@ -67,7 +68,7 @@
 }
 
 .form_container_phone i {
-	display: none;
+	display: block;
 	padding-bottom: 0.7rem;
 
 	@include breakpoint(md) {

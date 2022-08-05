@@ -15,7 +15,7 @@ const About = () => {
 						with great attention to quality and durability.
 					</p>
 				</div>
-				<div className={classes.image}></div>
+				{/* <div className={classes.image}></div> */}
 			</div>
 		</div>
 	);
