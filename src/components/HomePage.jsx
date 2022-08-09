@@ -7,7 +7,7 @@ const HomePage = () => {
 			<div className={classes.toptext}>
 				<h2>
 					{' '}
-					<span className={classes.h1orange}>t</span>he conve<span className={classes.h2green}>r</span>gence of ingenuity <span className={classes.h2green}>a</span>nd practi<span className={classes.h2green}>k</span>ality
+					<span className={classes.h1orange}>t</span>he <br></br> &nbsp;conve<span className={classes.h2green}>r</span>gence of &nbsp;&nbsp;cre<span className={classes.h2green}>a</span>tivity  & practi<span className={classes.h2green}>k</span>ality &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				</h2>
 			</div>
 			<div className={classes.bottomtext}>

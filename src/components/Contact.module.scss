@@ -34,11 +34,11 @@
 .form_container h3 {
 	font-size: 1rem;
 	font-weight: 600;
-	margin-bottom: 0.6rem;
+	margin-bottom: 0.5rem;
 	text-align: center;
 
 	@include breakpoint(md) {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 }
 
@@ -46,13 +46,12 @@
 	display: block;
 	font-size: 0.8rem;
 	font-weight: 400;
-	margin-bottom: 1rem;
 	font-family: 'kanit', sans-serif;
 	text-align: center;
 
 	@include breakpoint(md) {
 		font-size: 1rem;
-        display: block;
+		display: block;
 	}
 }
 
@@ -61,15 +60,43 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
+	padding-bottom: 0.1rem;
+	padding-top: 0rem;
+}
+
+.form_container_add {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding-bottom: 1rem;
+	padding-top: 0rem;
 }
 
 .form_container_phone p {
 	padding-left: 0.5rem;
+	padding-bottom: 1px;
+	margin-bottom: 0px;
+}
+
+.form_container_add p {
+	padding-left: 0.5rem;
+	padding-bottom: 1px;
+	margin-bottom: 0px;
+}
+
+.form_container_add i {
+	display: block;
+	padding-top: 2px;
+
+	@include breakpoint(md) {
+		display: block;
+	}
 }
 
 .form_container_phone i {
 	display: block;
-	padding-bottom: 0.7rem;
+	padding-top: 2px;
 
 	@include breakpoint(md) {
 		display: block;
@@ -126,7 +153,7 @@
 
 			&:hover {
 				transition: 0.3s all linear;
-				background: hsl(0, 0%, 85%);
+				background: hsl(0, 0%, 80%);
 			}
 		}
 

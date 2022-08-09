@@ -2,12 +2,14 @@ import React, { useRef } from 'react';
 import classes from './Contact.module.scss';
 import emailjs from '@emailjs/browser';
 import { FaPhoneSquare } from 'react-icons/fa';
+import { HiLocationMarker } from 'react-icons/hi';
+import { AiFillPhone} from 'react-icons/ai';
 
 const Contact = () => {
 	const form = useRef();
 
 	const sendEmail = (e) => {
-		e.preventDefault();
+		// e.preventDefault();
 
 		emailjs
 			.sendForm(
@@ -34,9 +36,16 @@ const Contact = () => {
 					<div className={classes.form_container_phone}>
 						<i>
 							{' '}
-							<FaPhoneSquare />
+							<AiFillPhone />
 						</i>
-						<p>519 674 0709 </p>
+						<p>+1 &nbsp;519-674-0709</p>
+					</div>
+					<div className={classes.form_container_add}>
+						<i>
+							{' '}
+							<HiLocationMarker />
+						</i>
+						<p>94 Erie St S, Ridgetown, ON N0P 2C0</p>
 					</div>
 					<form
 						action=""
@@ -75,7 +84,7 @@ const Contact = () => {
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.7486855082607!2d-81.88100114839041!3d42.43308397907971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882fe8107c880d0b%3A0x3c8e961f42d329ed!2sTRAK%20Tool%20%26%20Machine%20Inc!5e0!3m2!1sen!2sca!4v1658986123456!5m2!1sen!2sca"
 						allowfullscreen=""
 						loading="lazy"
-                        style={{ width: '100%', height: '100%', border: 'none' }}
+						style={{ width: '100%', height: '100%', border: 'none' }}
 						referrerpolicy="no-referrer-when-downgrade"
 					></iframe>
 				</div>

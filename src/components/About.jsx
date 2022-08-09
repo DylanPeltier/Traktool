@@ -10,7 +10,7 @@ const About = () => {
 				</div>
 				<div className={classes.para}>
 					<p>
-						Through our knowledgeable and experienced staff TRAK strives to
+						Through our knowledgeable and experienced staff, TRAK strives to
 						deliver to our customers the best possible solution at a low cost
 						with great attention to quality and durability.
 					</p>
