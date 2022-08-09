@@ -16,6 +16,11 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
+
+		@include breakpoint(md) {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
 	}
 
 	.bottomtext {
