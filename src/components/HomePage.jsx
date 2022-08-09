@@ -7,13 +7,13 @@ const HomePage = () => {
 			<div className={classes.toptext}>
 				<h2>
 					{' '}
-					<span className={classes.h2green}> you </span> need it
+					<span className={classes.h1orange}>t</span>he conve<span className={classes.h2green}>r</span>gence of ingenuity <span className={classes.h2green}>a</span>nd practi<span className={classes.h2green}>k</span>ality
 				</h2>
 			</div>
 			<div className={classes.bottomtext}>
 				<h1>
 					{' '}
-					<span className={classes.h1orange}> we </span> make it
+					
 				</h1>
 			</div>
 		</div>
