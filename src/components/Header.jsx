@@ -38,7 +38,11 @@ const Header = () => {
 	return (
 		<header className={classes.header}>
 			<div className={classes.header__content}>
-				<Link to="/" className={classes.header__content__logo}>
+				<Link
+					to="/"
+					className={classes.header__content__logo}
+					title="Link to homepage"
+				>
 					<div className={classes.traklogo}>
 						<img src="./../imgs/traklogo.png" alt="" />
 					</div>
