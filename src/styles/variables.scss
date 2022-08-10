@@ -32,6 +32,13 @@ $headerHeight: 100px;
 		}
 	}
 
+	@if $point == xsm {
+		// 768px
+		@media (min-width: 18em) {
+			@content;
+		}
+	}
+
 	@if $point == sm {
 		// 768px
 		@media (min-width: 40em) {

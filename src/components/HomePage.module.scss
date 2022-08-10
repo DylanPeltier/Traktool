@@ -1,41 +1,33 @@
 @import './../styles/variables.scss';
 
-.middletext {
-	color: $light;
+.svg {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	font-size: 2.5vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px;
 
-	@include breakpoint(md) {
-		font-size: 6vh;
-	}
+	.image {
+		padding: 50px 50px;
+		width: 250px;
+		height: 147px;
+		background-image: url('../imgs/homeimg.png');
+		background-size: contain;
+		background-repeat: no-repeat;
 
-	.toptext {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-
-		@include breakpoint(md) {
-			padding-left: 10%;
-			padding-right: 10%;
+		@include breakpoint(xsm) {
+			width: 340px;
+			height: 200px;
 		}
-	}
 
-	.bottomtext {
-		padding: 0rem;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}
+		@include breakpoint(sm) {
+			width: 700px;
+			height: 411px;
+		}
 
-	.h2green {
-		color: $trak-green;
-	}
-
-	.h1orange {
-		color: $trak-orange;
+		@include breakpoint(xl) {
+			width: 1000px;
+			height: 588px;
+		}
 	}
 }

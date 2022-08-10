@@ -77,12 +77,22 @@
 	padding-left: 0.5rem;
 	padding-bottom: 1px;
 	margin-bottom: 0px;
+	font-size: 0.6rem;
+
+	@include breakpoint(md) {
+		font-size: 1.1rem;
+	}
 }
 
 .form_container_add p {
 	padding-left: 0.5rem;
 	padding-bottom: 1px;
 	margin-bottom: 0px;
+	font-size: 0.6rem;
+
+	@include breakpoint(md) {
+		font-size: 1.1rem;
+	}
 }
 
 .form_container_add i {
