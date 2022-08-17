@@ -30,4 +30,28 @@
 			height: 588px;
 		}
 	}
+
+	.imagetwo {
+		padding: 50px 50px;
+		width: 250px;
+		height: 147px;
+		background-image: url('../imgs/storefront.jpg');
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@include breakpoint(xsm) {
+			width: 340px;
+			height: 200px;
+		}
+
+		@include breakpoint(sm) {
+			width: 700px;
+			height: 411px;
+		}
+
+		@include breakpoint(xl) {
+			width: 1000px;
+			height: 588px;
+		}
+	}
 }

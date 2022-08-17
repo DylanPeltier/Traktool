@@ -6,7 +6,7 @@ const Gallery = () => {
 	return (
 		<div className={classes.container}>
 			<div className={classes.title}>
-				<h1>our work</h1>
+				<h1>Our Work</h1>
 			</div>
 			<Slider />
 		</div>

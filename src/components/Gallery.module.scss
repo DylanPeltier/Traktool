@@ -12,9 +12,12 @@
 .title h1 {
 	font-size: 4.5vh;
 	padding-bottom: 1.2rem;
+	color: $light;
 
 	@include breakpoint(xl) {
 		font-size: 6.7vh;
         padding-bottom: 1rem;
+		color: $light;
+
 	}
 }

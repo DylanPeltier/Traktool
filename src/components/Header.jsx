@@ -4,9 +4,24 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import classes from './Header.module.scss';
+import styles from './HomePage.module.scss';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+	const [count, setCount] = React.useState(1);
+
+	const onClick = () => {
+		setCount(count + 1);
+
+		if (count === 5) {
+			document.getElementById("img").className = styles.imagetwo;
+			setTimeout(() => {
+				document.getElementById("img").className = styles.image;
+			}, 30000);
+			setCount(1);
+		}
+	}
+
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [size, setSize] = useState({
 		width: window.innerWidth,
@@ -43,7 +58,7 @@ const Header = () => {
 					className={classes.header__content__logo}
 					title="Link to homepage"
 				>
-					<div className={classes.traklogo}>
+					<div onClick={onClick} className={classes.traklogo}>
 						<img src="./../imgs/traklogo.png" alt="" />
 					</div>
 				</Link>
