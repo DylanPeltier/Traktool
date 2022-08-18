@@ -21,7 +21,7 @@ const Header = () => {
 			document.getElementById("img").className = styles.imagetwo;
 			setTimeout(() => {
 				document.getElementById("img").className = styles.image;
-			}, 30000);
+			}, 15000);
 			setCount(1);
 		}
 	}
