@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -9,9 +10,12 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
 	const [count, setCount] = React.useState(1);
+	const location = useLocation();
+	console.log(location.pathname);
 
 	const onClick = () => {
 		setCount(count + 1);
+		console.log(count);
 
 		if (count === 5) {
 			document.getElementById("img").className = styles.imagetwo;
