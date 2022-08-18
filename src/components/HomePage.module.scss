@@ -26,8 +26,8 @@
 		}
 
 		@include breakpoint(xl) {
-			width: 1000px;
-			height: 588px;
+			width: 925px;
+			height: 544px;
 		}
 	}
 
@@ -35,7 +35,7 @@
 		padding: 50px 50px;
 		width: 250px;
 		height: 147px;
-		background-image: url('../imgs/storefront.jpg');
+		background-image: url('../imgs/secretmessage.webp');
 		background-size: contain;
 		background-repeat: no-repeat;
 
@@ -50,8 +50,8 @@
 		}
 
 		@include breakpoint(xl) {
-			width: 1000px;
-			height: 588px;
+			width: 925px;
+			height: 544px;
 		}
 	}
 }
