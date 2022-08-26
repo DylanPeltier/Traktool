@@ -5,26 +5,26 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import classes from './Header.module.scss';
-import styles from './HomePage.module.scss';
+// import styles from './HomePage.module.scss';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-	const [count, setCount] = React.useState(1);
+	// const [count, setCount] = React.useState(1);
 	const location = useLocation();
 	console.log(location.pathname);
 
-	const onClick = () => {
-		setCount(count + 1);
-		console.log(count);
+	// const onClick = () => {
+	// 	setCount(count + 1);
+	// 	console.log(count);
 
-		if (count === 5) {
-			document.getElementById("img").className = styles.imagetwo;
-			setTimeout(() => {
-				document.getElementById("img").className = styles.image;
-			}, 15000);
-			setCount(1);
-		}
-	}
+	// 	if (count === 5) {
+	// 		document.getElementById("img").className = styles.imagetwo;
+	// 		setTimeout(() => {
+	// 			document.getElementById("img").className = styles.image;
+	// 		}, 15000);
+	// 		setCount(1);
+	// 	}
+	// }
 
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [size, setSize] = useState({
@@ -62,7 +62,7 @@ const Header = () => {
 					className={classes.header__content__logo}
 					title="Link to homepage"
 				>
-					<div onClick={onClick} className={classes.traklogo}>
+					<div className={classes.traklogo}>
 						<img src="./../imgs/traklogo.png" alt="" />
 					</div>
 				</Link>

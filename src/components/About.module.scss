@@ -25,7 +25,7 @@
 		background-position: center;
 		background-size: cover;
 		width: 75vw;
-		height: 42vh;
+		height: 75vh;
 		border-radius: 15px;
 
 		@include breakpoint(md) {
@@ -45,12 +45,18 @@
 
 		.para {
 			padding: 0.5rem 3rem;
-			font-size: 1.8vh;
+			font-size: 1.5vh;
 			width: 120%;
 			padding-bottom: 1rem;
 			font-family: 'kanit', sans-serif;
 
 			@include breakpoint(md) {
+				font-size: 1.8vh;
+				padding: 1rem 5.5rem;
+				width: 100%;
+			}
+
+			@include breakpoint(lg) {
 				font-size: 2.5vh;
 				padding: 1rem 5.5rem;
 				width: 100%;
