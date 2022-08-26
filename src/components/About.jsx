@@ -9,6 +9,8 @@ const About = () => {
 					<h1>about us</h1>
 				</div>
 				<div className={classes.para}>
+					<p>Through our knowledgeable and experienced staff, TRAK strives to deliver to our customers the best possible solution at a low cost with great attention to quality and durability.</p>
+					<br />
 					<p>
 					TRAK Tool & Machine was started in 1986, incorporated in 1988.  Originally located in Ron Bailey’s (founder) back yard, moved to our current location in 1987.  Die repair and maintenance for local automotive parts/stamping factories was its first niche, followed by new die building.  We have been known throughout Chatham-Kent for our custom machinery capabilities, which has led us to building dies, fixtures, and other custom machinery throughout Southern Ontario, US, Mexico and beyond.
 					</p>
